@@ -19,7 +19,7 @@ header {
 }
 
 .card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+    padding-top: 5px;
+    background-color: purple;
+    padding-bottom: 5px;
 }
