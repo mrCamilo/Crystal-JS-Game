@@ -10,3 +10,6 @@ var computerPick = Math.floor(Math.random() * (+120 - + 19)) + +19;
 document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 document.getElementById("lossesDisplay").innerHTML = "Losses: " + numLosses;
 document.getElementById("winsDisplay").innerHTML = "Wins: " + numWins;
+document.getElementById("computerPickDisplay").innerHTML = "Target: " + computerPick;
+
+// 4 on click events for each button
