@@ -17,7 +17,7 @@ var randomCrystalValue = Math.floor(Math.random() * (+12 - + 1)) + +1;
 document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 document.getElementById("lossesDisplay").innerHTML = "Losses: " + numLosses;
 document.getElementById("winsDisplay").innerHTML = "Wins: " + numWins;
-document.getElementById("computerPickDisplay").innerHTML = "Target: " + computerPick;
+document.getElementById("computerPickDisplay").innerHTML = "Your Target Score: " + computerPick;
 
 // on click event
 $(document).ready(function() {
