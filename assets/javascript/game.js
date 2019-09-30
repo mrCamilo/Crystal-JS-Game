@@ -22,7 +22,9 @@ document.getElementById("computerPickDisplay").innerHTML = "Target: " + computer
 // on click event
 $(document).ready(function() {
     $(".crystal").on("click", function() {
-        
-    });
+        if (this.click)  
+        {
 
+        }
+    });
 });
