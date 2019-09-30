@@ -23,27 +23,27 @@ document.getElementById("computerPickDisplay").innerHTML = "Target: " + computer
 // on click event
 $(document).ready(function() {
     $(".btn").on("click", function() {
-
+        
         if ($(this).hasClass("ruby"))
         {
-            totalScore = randomRubyValue + totalScore;
+            totalScore += randomRubyValue;
             document.getElementById("totalScoreDisplay").innerHTML = totalScore;
         }
         else if ($(this).hasClass("emerald"))
         {
-            totalScore = randomEmeraldValue + totalScore;
+            totalScore += randomEmeraldValue;
             document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 
         }
         else if ($(this).hasClass("crystal"))
         {
-            totalScore = randomCrystalValue + totalScore;
+            totalScore += randomCrystalValue;
             document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 
         }
         else if ($(this).hasClass("sapphire"))
         {
-            totalScore = randomSapphireValue + totalScore;
+            totalScore += randomSapphireValue;
             document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 
         }
