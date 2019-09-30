@@ -43,17 +43,19 @@
     <!--Wins, losses, and computer score is displayed here-->
         <div class = "row">
             <div class = "col-3"></div>
-            <div class = "col-3"><img src="assets/images/ruby.png"></div>
-            <div class = "col-3"><img src="assets/images/ruby.png"></div>
+            <div class = "card winLossCard">
+                <div class = "card-body">
+                        <p id="winsDisplay"></p>
+                        <p id="lossesDisplay"></p>
+                </div>
+            </div>
             <div class = "col-3"></div>
         </div>
-
-
 
     <!--Total score-->
         <div class = "row justify-content-center">
             <div class = "col-lg-6">
-                    <div class="card">
+                    <div class="card scoreCard">
                             <div class="card-body">
                                 <h5 class="card-title">Your total score is: </h5>
                                 <p id="totalScoreDisplay"></p>
