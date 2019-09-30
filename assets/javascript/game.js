@@ -2,7 +2,7 @@
 var totalScore = 0;
 var numWins = 0;
 var numLosses = 0;
-var scoreLessThanComputer = true; // make sure score is less than computers
+var isValidScore = true; // make sure score is less than computers
 
 // Computer picks a random number greater than or equal to 19 and less than 120
 var computerPick = Math.floor(Math.random() * (+120 - + 19)) + +19;
@@ -13,7 +13,6 @@ var randomEmeraldValue = Math.floor(Math.random() * (+12 - + 1)) + +1;
 var randomSapphireValue = Math.floor(Math.random() * (+12 - + 1)) + +1;
 var randomCrystalValue = Math.floor(Math.random() * (+12 - + 1)) + +1;
 
-
 // display for total score, wins, and losses
 document.getElementById("totalScoreDisplay").innerHTML = totalScore;
 document.getElementById("lossesDisplay").innerHTML = "Losses: " + numLosses;
@@ -23,7 +22,14 @@ document.getElementById("computerPickDisplay").innerHTML = "Target: " + computer
 // on click event
 $(document).ready(function() {
     $(".btn").on("click", function() {
-        
+       // if (totalScore > computerPick) {
+         //   numWins++;
+        //}
+
+        //if (isValidScore) { // don't run again
+          //  return false;
+        //}
+
         if ($(this).hasClass("ruby"))
         {
             totalScore += randomRubyValue;
