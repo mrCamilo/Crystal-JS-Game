@@ -40,13 +40,13 @@ $(document).ready(function () {
             document.getElementById("totalScoreDisplay").innerHTML = totalScore;
         }   
 
-        // Increment losses and wins if the total score surpasses or is equal to computer
+        // Increment losses and wins and restart the game
         if (totalScore > computerPick) {
             numLosses++;
             document.getElementById("lossesDisplay").innerHTML = "Losses: " + numLosses;
             alert("That's a loss.")
             //Reset!!
-
+            resetTheGame();
         }
         else if (totalScore === computerPick)
         {
@@ -54,6 +54,7 @@ $(document).ready(function () {
             document.getElementById("winsDisplay").innerHTML = "Wins: " + numWins;
             alert("That's a W!");
             // Reset
+            resetTheGame();
         }
     });
 });
