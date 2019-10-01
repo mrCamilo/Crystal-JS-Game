@@ -3,7 +3,6 @@ var totalScore = 0;
 var numWins = 0;
 var numLosses = 0;
 
-
 // Computer picks a random number greater than or equal to 19 and less than 120
 var computerPick = Math.floor(Math.random() * (+120 - + 19)) + +19;
 
@@ -24,7 +23,7 @@ $(document).ready(function () {
     $(".btn").on("click", function () {
         if ($(this).hasClass("ruby")) {
             totalScore += randomRubyValue;
-            document.getElementById("totalScoreDisplay").innerHTML = totalScore;
+            document.getElementById("totalScoreDisplay").innerHTML = totalScore;            
         }
         else if ($(this).hasClass("emerald")) {
             totalScore += randomEmeraldValue;
@@ -45,13 +44,16 @@ $(document).ready(function () {
         if (totalScore > computerPick) {
             numLosses++;
             document.getElementById("lossesDisplay").innerHTML = "Losses: " + numLosses;
+            alert("That's a loss.")
+            //Reset!!
 
         }
         else if (totalScore === computerPick)
         {
             numWins++;
             document.getElementById("winsDisplay").innerHTML = "Wins: " + numWins;
-
+            alert("That's a W!");
+            // Reset
         }
     });
 });
